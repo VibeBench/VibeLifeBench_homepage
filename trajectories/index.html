@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Trajectories — VibeLifeBench</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<style id="vlb-nav-css">
+.vlb-sitenav{display:flex;align-items:center;gap:18px;padding:9px 18px;background:#161d29;border-bottom:1px solid #2b3547;font-family:'DM Sans',system-ui,-apple-system,'Segoe UI',Roboto,'Noto Sans SC',sans-serif}
+.vlb-sitenav .vlb-brand{display:flex;align-items:center;gap:9px;color:#fff;text-decoration:none;font-weight:700;letter-spacing:.2px}
+.vlb-sitenav .vlb-brand img{height:26px;width:auto;display:block}
+.vlb-sitenav .vlb-links{display:flex;gap:4px;margin-left:auto;flex-wrap:wrap}
+.vlb-sitenav .vlb-links a{color:#c7d2e0;text-decoration:none;font-size:14px;padding:6px 13px;border-radius:8px;transition:background .15s,color .15s}
+.vlb-sitenav .vlb-links a:hover{background:#26314250;color:#fff}
+.vlb-sitenav .vlb-links a.active{background:#6c8cff;color:#fff}
+</style>
+<nav class="vlb-sitenav"><a class="vlb-brand" href="../index.html"><img src="../assets/logo.png" alt="VibeLifeBench"><span>VibeLifeBench</span></a><div class="vlb-links"><a href="../index.html">Overview</a><a href="../leaderboard.html">Leaderboard</a><a href="../trajectories/index.html" class="active">Trajectories</a><a href="../livedemo/index.html">Live Demo</a></div></nav>
+
+<header class="topbar">
+  <div class="brand">
+    VibeLifeBench<span class="dot">·</span><span class="muted">trajectory browser</span>
+    <span class="tag" id="meta-set"></span>
+  </div>
+  <div class="stats" id="stats"></div>
+  <div class="actions">
+    <input id="search" type="search" placeholder="搜索任务 / 场景 / 标签…" autocomplete="off">
+    <button id="btn-api" class="btn">API 浏览器</button>
+  </div>
+</header>
+
+<div class="layout">
+  <aside class="sidebar" id="sidebar"></aside>
+  <main class="detail" id="detail">
+    <div class="empty">
+      <h2>terrarium 评测浏览器</h2>
+      <p>左侧选择一个任务，查看它的<strong>需求脚本、环境 API、种子数据、评分标准</strong>，并用<strong>时间轴回放</strong>站在任务生命周期的任意节点查看轨迹与状态。</p>
+    </div>
+  </main>
+</div>
+
+<div class="modal" id="api-modal" hidden>
+  <div class="modal-box">
+    <div class="modal-head">
+      <span id="api-title">环境 API 浏览器</span>
+      <input id="api-search" type="search" placeholder="搜索工具…">
+      <button class="btn ghost" id="api-close">✕</button>
+    </div>
+    <div class="modal-body" id="api-body"></div>
+  </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

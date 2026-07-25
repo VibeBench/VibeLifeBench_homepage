@@ -1,0 +1,1001 @@
+{
+  "weather": {
+    "locations": [
+      {
+        "geo_key": "shanghai_home",
+        "city": "Shanghai",
+        "country": "CN",
+        "lat": 31.2304,
+        "lng": 121.4737,
+        "timezone": "Asia/Shanghai",
+        "climate_profile_id": "cn_autumn",
+        "kind": "home"
+      },
+      {
+        "geo_key": "christchurch",
+        "city": "Christchurch",
+        "country": "NZ",
+        "lat": -43.5321,
+        "lng": 172.6362,
+        "timezone": "Pacific/Auckland",
+        "climate_profile_id": "nz_spring",
+        "kind": "city"
+      },
+      {
+        "geo_key": "tekapo",
+        "city": "Lake Tekapo",
+        "country": "NZ",
+        "lat": -44.0045,
+        "lng": 170.4825,
+        "timezone": "Pacific/Auckland",
+        "climate_profile_id": "nz_spring",
+        "kind": "town"
+      },
+      {
+        "geo_key": "mt_cook",
+        "city": "Aoraki/Mount Cook",
+        "country": "NZ",
+        "lat": -43.595,
+        "lng": 170.1418,
+        "timezone": "Pacific/Auckland",
+        "climate_profile_id": "nz_spring",
+        "kind": "natural"
+      },
+      {
+        "geo_key": "queenstown",
+        "city": "Queenstown",
+        "country": "NZ",
+        "lat": -45.0312,
+        "lng": 168.6626,
+        "timezone": "Pacific/Auckland",
+        "climate_profile_id": "nz_spring",
+        "kind": "city"
+      },
+      {
+        "geo_key": "te_anau",
+        "city": "Te Anau",
+        "country": "NZ",
+        "lat": -45.4144,
+        "lng": 167.718,
+        "timezone": "Pacific/Auckland",
+        "climate_profile_id": "nz_spring",
+        "kind": "town"
+      },
+      {
+        "geo_key": "manapouri",
+        "city": "Manapouri",
+        "country": "NZ",
+        "lat": -45.57,
+        "lng": 167.61,
+        "timezone": "Pacific/Auckland",
+        "climate_profile_id": "nz_spring",
+        "kind": "town"
+      },
+      {
+        "geo_key": "milford",
+        "city": "Milford Sound",
+        "country": "NZ",
+        "lat": -44.6714,
+        "lng": 167.9259,
+        "timezone": "Pacific/Auckland",
+        "climate_profile_id": "nz_spring",
+        "kind": "natural"
+      },
+      {
+        "geo_key": "picton",
+        "city": "Picton",
+        "country": "NZ",
+        "lat": -41.2833,
+        "lng": 174.0017,
+        "timezone": "Pacific/Auckland",
+        "climate_profile_id": "nz_spring",
+        "kind": "town"
+      },
+      {
+        "geo_key": "wellington",
+        "city": "Wellington",
+        "country": "NZ",
+        "lat": -41.2865,
+        "lng": 174.7762,
+        "timezone": "Pacific/Auckland",
+        "climate_profile_id": "nz_spring",
+        "kind": "city"
+      },
+      {
+        "geo_key": "taupo",
+        "city": "Taupo",
+        "country": "NZ",
+        "lat": -38.6857,
+        "lng": 176.0702,
+        "timezone": "Pacific/Auckland",
+        "climate_profile_id": "nz_spring",
+        "kind": "town"
+      },
+      {
+        "geo_key": "rotorua",
+        "city": "Rotorua",
+        "country": "NZ",
+        "lat": -38.1368,
+        "lng": 176.2497,
+        "timezone": "Pacific/Auckland",
+        "climate_profile_id": "nz_spring",
+        "kind": "city"
+      },
+      {
+        "geo_key": "auckland",
+        "city": "Auckland",
+        "country": "NZ",
+        "lat": -36.8509,
+        "lng": 174.7645,
+        "timezone": "Pacific/Auckland",
+        "climate_profile_id": "nz_spring",
+        "kind": "city"
+      }
+    ],
+    "daily_weather": [
+      {
+        "geo_key": "shanghai_home",
+        "date": "2026-09-25",
+        "tmin": 15,
+        "tmax": 23,
+        "condition": "sunny",
+        "precip_mm": 0,
+        "precip_prob": 0.05,
+        "wind_kmh": 10
+      },
+      {
+        "geo_key": "shanghai_home",
+        "date": "2026-09-26",
+        "tmin": 16,
+        "tmax": 24,
+        "condition": "sunny",
+        "precip_mm": 0,
+        "precip_prob": 0.05,
+        "wind_kmh": 12
+      },
+      {
+        "geo_key": "shanghai_home",
+        "date": "2026-09-28",
+        "tmin": 15,
+        "tmax": 22,
+        "condition": "partly_cloudy",
+        "precip_mm": 0,
+        "precip_prob": 0.1,
+        "wind_kmh": 12
+      },
+      {
+        "geo_key": "shanghai_home",
+        "date": "2026-09-30",
+        "tmin": 14,
+        "tmax": 21,
+        "condition": "partly_cloudy",
+        "precip_mm": 1,
+        "precip_prob": 0.15,
+        "wind_kmh": 14
+      },
+      {
+        "geo_key": "shanghai_home",
+        "date": "2026-10-02",
+        "tmin": 14,
+        "tmax": 22,
+        "condition": "sunny",
+        "precip_mm": 0,
+        "precip_prob": 0.1,
+        "wind_kmh": 10
+      },
+      {
+        "geo_key": "shanghai_home",
+        "date": "2026-10-04",
+        "tmin": 13,
+        "tmax": 21,
+        "condition": "partly_cloudy",
+        "precip_mm": 1,
+        "precip_prob": 0.15,
+        "wind_kmh": 13
+      },
+      {
+        "geo_key": "shanghai_home",
+        "date": "2026-10-06",
+        "tmin": 13,
+        "tmax": 20,
+        "condition": "cloudy",
+        "precip_mm": 2,
+        "precip_prob": 0.2,
+        "wind_kmh": 15
+      },
+      {
+        "geo_key": "shanghai_home",
+        "date": "2026-10-10",
+        "tmin": 12,
+        "tmax": 20,
+        "condition": "partly_cloudy",
+        "precip_mm": 0,
+        "precip_prob": 0.1,
+        "wind_kmh": 12
+      },
+      {
+        "geo_key": "christchurch",
+        "date": "2026-10-10",
+        "tmin": 5,
+        "tmax": 15,
+        "condition": "sunny",
+        "precip_mm": 0,
+        "precip_prob": 0.1,
+        "wind_kmh": 15
+      },
+      {
+        "geo_key": "christchurch",
+        "date": "2026-10-11",
+        "tmin": 6,
+        "tmax": 16,
+        "condition": "partly_cloudy",
+        "precip_mm": 1,
+        "precip_prob": 0.2,
+        "wind_kmh": 12
+      },
+      {
+        "geo_key": "tekapo",
+        "date": "2026-10-12",
+        "tmin": 3,
+        "tmax": 14,
+        "condition": "sunny",
+        "precip_mm": 0,
+        "precip_prob": 0.1,
+        "wind_kmh": 12
+      },
+      {
+        "geo_key": "tekapo",
+        "date": "2026-10-13",
+        "tmin": 3,
+        "tmax": 14,
+        "condition": "sunny",
+        "precip_mm": 0,
+        "precip_prob": 0.1,
+        "wind_kmh": 10
+      },
+      {
+        "geo_key": "tekapo",
+        "date": "2026-10-17",
+        "tmin": 4,
+        "tmax": 15,
+        "condition": "partly_cloudy",
+        "precip_mm": 1,
+        "precip_prob": 0.15,
+        "wind_kmh": 14
+      },
+      {
+        "geo_key": "tekapo",
+        "date": "2026-10-18",
+        "tmin": 4,
+        "tmax": 14,
+        "condition": "partly_cloudy",
+        "precip_mm": 1,
+        "precip_prob": 0.2,
+        "wind_kmh": 16
+      },
+      {
+        "geo_key": "mt_cook",
+        "date": "2026-10-13",
+        "tmin": 2,
+        "tmax": 13,
+        "condition": "sunny",
+        "precip_mm": 0,
+        "precip_prob": 0.1,
+        "wind_kmh": 12
+      },
+      {
+        "geo_key": "queenstown",
+        "date": "2026-10-14",
+        "tmin": 4,
+        "tmax": 12,
+        "condition": "cloudy",
+        "precip_mm": 5,
+        "precip_prob": 0.4,
+        "wind_kmh": 18
+      },
+      {
+        "geo_key": "queenstown",
+        "date": "2026-10-17",
+        "tmin": 5,
+        "tmax": 14,
+        "condition": "partly_cloudy",
+        "precip_mm": 2,
+        "precip_prob": 0.25,
+        "wind_kmh": 16
+      },
+      {
+        "geo_key": "te_anau",
+        "date": "2026-10-15",
+        "tmin": 5,
+        "tmax": 11,
+        "condition": "rain",
+        "precip_mm": 25,
+        "precip_prob": 0.7,
+        "wind_kmh": 25
+      },
+      {
+        "geo_key": "manapouri",
+        "date": "2026-10-16",
+        "tmin": 5,
+        "tmax": 11,
+        "condition": "overcast",
+        "precip_mm": 8,
+        "precip_prob": 0.55,
+        "wind_kmh": 22
+      },
+      {
+        "geo_key": "milford",
+        "date": "2026-10-15",
+        "tmin": 6,
+        "tmax": 10,
+        "condition": "heavy_rain",
+        "precip_mm": 180,
+        "precip_prob": 0.95,
+        "wind_kmh": 40
+      },
+      {
+        "geo_key": "milford",
+        "date": "2026-10-16",
+        "tmin": 5,
+        "tmax": 9,
+        "condition": "heavy_rain",
+        "precip_mm": 120,
+        "precip_prob": 0.9,
+        "wind_kmh": 35
+      },
+      {
+        "geo_key": "milford",
+        "date": "2026-10-17",
+        "tmin": 4,
+        "tmax": 12,
+        "condition": "cloudy",
+        "precip_mm": 10,
+        "precip_prob": 0.3,
+        "wind_kmh": 15
+      },
+      {
+        "geo_key": "picton",
+        "date": "2026-10-18",
+        "tmin": 7,
+        "tmax": 15,
+        "condition": "partly_cloudy",
+        "precip_mm": 2,
+        "precip_prob": 0.25,
+        "wind_kmh": 20
+      },
+      {
+        "geo_key": "picton",
+        "date": "2026-10-19",
+        "tmin": 8,
+        "tmax": 14,
+        "condition": "windy",
+        "precip_mm": 3,
+        "precip_prob": 0.4,
+        "wind_kmh": 32
+      },
+      {
+        "geo_key": "wellington",
+        "date": "2026-10-19",
+        "tmin": 8,
+        "tmax": 15,
+        "condition": "windy",
+        "precip_mm": 3,
+        "precip_prob": 0.35,
+        "wind_kmh": 30
+      },
+      {
+        "geo_key": "wellington",
+        "date": "2026-10-20",
+        "tmin": 9,
+        "tmax": 16,
+        "condition": "partly_cloudy",
+        "precip_mm": 1,
+        "precip_prob": 0.2,
+        "wind_kmh": 22
+      },
+      {
+        "geo_key": "taupo",
+        "date": "2026-10-20",
+        "tmin": 9,
+        "tmax": 17,
+        "condition": "partly_cloudy",
+        "precip_mm": 1,
+        "precip_prob": 0.2,
+        "wind_kmh": 15
+      },
+      {
+        "geo_key": "rotorua",
+        "date": "2026-10-21",
+        "tmin": 9,
+        "tmax": 19,
+        "condition": "sunny",
+        "precip_mm": 0,
+        "precip_prob": 0.1,
+        "wind_kmh": 11
+      },
+      {
+        "geo_key": "auckland",
+        "date": "2026-10-22",
+        "tmin": 11,
+        "tmax": 19,
+        "condition": "partly_cloudy",
+        "precip_mm": 1,
+        "precip_prob": 0.2,
+        "wind_kmh": 14
+      },
+      {
+        "geo_key": "auckland",
+        "date": "2026-10-23",
+        "tmin": 12,
+        "tmax": 20,
+        "condition": "sunny",
+        "precip_mm": 0,
+        "precip_prob": 0.05,
+        "wind_kmh": 10
+      },
+      {
+        "geo_key": "auckland",
+        "date": "2026-10-24",
+        "tmin": 10,
+        "tmax": 18,
+        "condition": "partly_cloudy",
+        "precip_mm": 2,
+        "precip_prob": 0.2,
+        "wind_kmh": 15
+      },
+      {
+        "geo_key": "shanghai_home",
+        "date": "2026-10-25",
+        "tmin": 12,
+        "tmax": 19,
+        "condition": "partly_cloudy",
+        "precip_mm": 1,
+        "precip_prob": 0.15,
+        "wind_kmh": 12
+      },
+      {
+        "geo_key": "shanghai_home",
+        "date": "2026-10-26",
+        "tmin": 11,
+        "tmax": 18,
+        "condition": "cloudy",
+        "precip_mm": 2,
+        "precip_prob": 0.2,
+        "wind_kmh": 14
+      },
+      {
+        "geo_key": "shanghai_home",
+        "date": "2026-10-27",
+        "tmin": 11,
+        "tmax": 18,
+        "condition": "partly_cloudy",
+        "precip_mm": 1,
+        "precip_prob": 0.15,
+        "wind_kmh": 12
+      },
+      {
+        "geo_key": "shanghai_home",
+        "date": "2026-10-28",
+        "tmin": 12,
+        "tmax": 19,
+        "condition": "sunny",
+        "precip_mm": 0,
+        "precip_prob": 0.1,
+        "wind_kmh": 10
+      }
+    ],
+    "alerts": []
+  },
+  "maps": {
+    "places": [
+      {
+        "place_id": "pl_chc_airport",
+        "name": "Christchurch Airport",
+        "category": "airport",
+        "lat": -43.4894,
+        "lng": 172.5322,
+        "country": "NZ",
+        "city": "Christchurch",
+        "rating": 4.0,
+        "price_level": 2,
+        "hours_json": null,
+        "phone": null,
+        "website": null,
+        "formatted": "Christchurch"
+      },
+      {
+        "place_id": "pl_tekapo",
+        "name": "Lake Tekapo",
+        "category": "natural",
+        "lat": -44.0045,
+        "lng": 170.4825,
+        "country": "NZ",
+        "city": "Lake Tekapo",
+        "rating": 4.8,
+        "price_level": 1,
+        "hours_json": null,
+        "phone": null,
+        "website": null,
+        "formatted": "Lake Tekapo"
+      },
+      {
+        "place_id": "pl_mt_cook",
+        "name": "Aoraki Mount Cook",
+        "category": "natural",
+        "lat": -43.595,
+        "lng": 170.1418,
+        "country": "NZ",
+        "city": "Mt Cook",
+        "rating": 4.9,
+        "price_level": 1,
+        "hours_json": null,
+        "phone": null,
+        "website": null,
+        "formatted": "Aoraki/Mt Cook NP"
+      },
+      {
+        "place_id": "pl_queenstown",
+        "name": "Queenstown CBD",
+        "category": "town_center",
+        "lat": -45.0312,
+        "lng": 168.6626,
+        "country": "NZ",
+        "city": "Queenstown",
+        "rating": 4.6,
+        "price_level": 2,
+        "hours_json": null,
+        "phone": null,
+        "website": null,
+        "formatted": "Queenstown"
+      },
+      {
+        "place_id": "pl_milford",
+        "name": "Milford Sound",
+        "category": "natural",
+        "lat": -44.6714,
+        "lng": 167.9259,
+        "country": "NZ",
+        "city": "Milford Sound",
+        "rating": 4.9,
+        "price_level": 2,
+        "hours_json": null,
+        "phone": null,
+        "website": null,
+        "formatted": "Milford Sound"
+      },
+      {
+        "place_id": "pl_wanaka",
+        "name": "Wanaka",
+        "category": "town_center",
+        "lat": -44.698,
+        "lng": 169.132,
+        "country": "NZ",
+        "city": "Wanaka",
+        "rating": 4.7,
+        "price_level": 2,
+        "hours_json": null,
+        "phone": null,
+        "website": null,
+        "formatted": "Wanaka"
+      },
+      {
+        "place_id": "pl_picton",
+        "name": "Picton Ferry Terminal",
+        "category": "ferry_terminal",
+        "lat": -41.2833,
+        "lng": 174.0017,
+        "country": "NZ",
+        "city": "Picton",
+        "rating": 4.0,
+        "price_level": 2,
+        "hours_json": null,
+        "phone": null,
+        "website": null,
+        "formatted": "Picton"
+      },
+      {
+        "place_id": "pl_wellington",
+        "name": "Wellington CBD",
+        "category": "city_center",
+        "lat": -41.2865,
+        "lng": 174.7762,
+        "country": "NZ",
+        "city": "Wellington",
+        "rating": 4.5,
+        "price_level": 2,
+        "hours_json": null,
+        "phone": null,
+        "website": null,
+        "formatted": "Wellington"
+      },
+      {
+        "place_id": "pl_taupo",
+        "name": "Lake Taupo",
+        "category": "natural",
+        "lat": -38.6857,
+        "lng": 176.0702,
+        "country": "NZ",
+        "city": "Taupo",
+        "rating": 4.6,
+        "price_level": 1,
+        "hours_json": null,
+        "phone": null,
+        "website": null,
+        "formatted": "Taupo"
+      },
+      {
+        "place_id": "pl_rotorua",
+        "name": "Rotorua Geothermal",
+        "category": "natural",
+        "lat": -38.1368,
+        "lng": 176.2497,
+        "country": "NZ",
+        "city": "Rotorua",
+        "rating": 4.5,
+        "price_level": 2,
+        "hours_json": null,
+        "phone": null,
+        "website": null,
+        "formatted": "Rotorua"
+      },
+      {
+        "place_id": "pl_rotorua_hangi",
+        "name": "Te Puia Hāngī Dinner",
+        "category": "restaurant",
+        "lat": -38.162,
+        "lng": 176.253,
+        "country": "NZ",
+        "city": "Rotorua",
+        "rating": 4.4,
+        "price_level": 3,
+        "hours_json": null,
+        "phone": null,
+        "website": null,
+        "formatted": "Rotorua"
+      },
+      {
+        "place_id": "pl_rotorua_lakeside_grill",
+        "name": "Lakeside Light Grill (low-salt options)",
+        "category": "restaurant",
+        "lat": -38.138,
+        "lng": 176.256,
+        "country": "NZ",
+        "city": "Rotorua",
+        "rating": 4.3,
+        "price_level": 2,
+        "hours_json": null,
+        "phone": null,
+        "website": null,
+        "formatted": "Rotorua"
+      },
+      {
+        "place_id": "pl_akl_airport",
+        "name": "Auckland Airport",
+        "category": "airport",
+        "lat": -37.0082,
+        "lng": 174.785,
+        "country": "NZ",
+        "city": "Auckland",
+        "rating": 4.0,
+        "price_level": 2,
+        "hours_json": null,
+        "phone": null,
+        "website": null,
+        "formatted": "Auckland"
+      }
+    ],
+    "roads": [
+      {
+        "road_id": "rd_sh94_milford",
+        "name": "SH94 Milford Road",
+        "city": "Te Anau",
+        "geom_json": "{\"type\":\"LineString\",\"coordinates\":[[167.73,-45.41],[167.93,-44.67]]}",
+        "geom": {
+          "type": "LineString",
+          "coordinates": [
+            [
+              167.73,
+              -45.41
+            ],
+            [
+              167.93,
+              -44.67
+            ]
+          ]
+        }
+      },
+      {
+        "road_id": "rd_sh80_mtcook",
+        "name": "SH80 Mount Cook Road",
+        "city": "Mt Cook",
+        "geom_json": "{\"type\":\"LineString\",\"coordinates\":[[170.10,-44.00],[170.14,-43.73]]}",
+        "geom": {
+          "type": "LineString",
+          "coordinates": [
+            [
+              170.1,
+              -44.0
+            ],
+            [
+              170.14,
+              -43.73
+            ]
+          ]
+        }
+      },
+      {
+        "road_id": "rd_sh8_tekapo",
+        "name": "SH8 Tekapo-Twizel",
+        "city": "Lake Tekapo",
+        "geom_json": "{\"type\":\"LineString\",\"coordinates\":[[170.48,-44.00],[170.10,-44.24]]}",
+        "geom": {
+          "type": "LineString",
+          "coordinates": [
+            [
+              170.48,
+              -44.0
+            ],
+            [
+              170.1,
+              -44.24
+            ]
+          ]
+        }
+      }
+    ],
+    "road_events": [
+      {
+        "event_id": "re_milford_rain",
+        "road_id": "rd_sh94_milford",
+        "start_dt": "2026-10-15T06:00",
+        "end_dt": "2026-10-16T18:00",
+        "kind": "closure",
+        "note": "Heavy rain, avalanche debris on SH94.",
+        "active": 0
+      },
+      {
+        "event_id": "re_sh80_quake",
+        "road_id": "rd_sh80_mtcook",
+        "start_dt": "2026-10-12T05:00",
+        "end_dt": "2026-10-13T12:00",
+        "kind": "closure",
+        "note": "Post-earthquake rockfall risk: SH80 Mt Cook Road closed for inspection until 2026-10-13 12:00; wait for confirmed reopening before travel.",
+        "active": 0
+      }
+    ],
+    "transit_lines": [
+      {
+        "line_id": "ln_interislander",
+        "name": "Interislander Ferry Picton-Wellington",
+        "mode": "train",
+        "operator": "KiwiRail",
+        "segment_minutes_json": "{\"Picton-Wellington\":210}",
+        "segment_minutes": {
+          "Picton-Wellington": 210
+        }
+      }
+    ],
+    "transit_stops": [
+      {
+        "stop_id": "ts_picton",
+        "name": "Picton Ferry Terminal",
+        "lat": -41.2833,
+        "lng": 174.0017,
+        "city": "Picton"
+      },
+      {
+        "stop_id": "ts_wellington_ferry",
+        "name": "Wellington Ferry Terminal",
+        "lat": -41.2865,
+        "lng": 174.785,
+        "city": "Wellington"
+      }
+    ],
+    "transit_events": [
+      {
+        "event_id": "te_cook_ferry_cancel",
+        "line_id": "ln_interislander",
+        "stop_id": null,
+        "start_dt": "2026-10-19T05:30",
+        "end_dt": "2026-10-19T13:00",
+        "kind": "suspended",
+        "note": "Morning Cook Strait sailing cancelled after weather/mechanical check; later campervan service resumes subject to final safety clearance.",
+        "active": 0
+      }
+    ],
+    "place_geo_map": {
+      "pl_chc_airport": "christchurch",
+      "pl_tekapo": "tekapo",
+      "pl_mt_cook": "mt_cook",
+      "pl_queenstown": "queenstown",
+      "pl_milford": "milford",
+      "pl_wanaka": "wanaka",
+      "pl_picton": "picton",
+      "pl_wellington": "wellington",
+      "pl_taupo": "taupo",
+      "pl_rotorua": "rotorua",
+      "pl_akl_airport": "auckland"
+    }
+  },
+  "flights": {
+    "MU779": {
+      "date": "2026-10-10",
+      "status": "on_time",
+      "delay_min": 0,
+      "depart": "11:00",
+      "note": "去程 PVG→CHC"
+    },
+    "NZ517": {
+      "date": "2026-10-10",
+      "status": "on_time",
+      "delay_min": 0,
+      "note": "联程 NZ517"
+    },
+    "MU780": {
+      "date": "2026-10-24",
+      "status": "on_time",
+      "delay_min": 0,
+      "depart": "11:30",
+      "gate": "15",
+      "note": "返程 AKL→PVG"
+    }
+  },
+  "hotels": {},
+  "emails": [],
+  "rental": {
+    "locations": [
+      {
+        "location_id": "loc_chc_airport",
+        "name": "Britz Christchurch Airport",
+        "city": "Christchurch",
+        "address": "159 Orchard Road, Christchurch Airport",
+        "lat": -43.489,
+        "lng": 172.532,
+        "hours_json": "{\"daily\":\"08:00-16:00\"}",
+        "note": "Pickup depot",
+        "website": "https://britz.example/chc"
+      },
+      {
+        "location_id": "loc_akl_airport",
+        "name": "Britz Auckland Airport",
+        "city": "Auckland",
+        "address": "13 Manu Tapu Drive, Auckland Airport",
+        "lat": -36.999,
+        "lng": 174.786,
+        "hours_json": "{\"daily\":\"08:00-16:00\"}",
+        "note": "Return depot",
+        "website": "https://britz.example/akl"
+      }
+    ],
+    "vehicles": [
+      {
+        "vehicle_id": "veh_venturer_2b",
+        "name": "Britz Venturer 2-Berth",
+        "category": "campervan",
+        "fuel": "gasoline",
+        "berths": 2,
+        "luggage": "2 large bags",
+        "length_mm": 2350,
+        "height_mm": 700,
+        "fuel_l_per_100km": 10.5,
+        "fuel_unit": "L",
+        "code": "V2B",
+        "notes": "Certified self-contained; sealed public roads only; two belted seats.",
+        "website": "https://britz.example/venturer"
+      },
+      {
+        "vehicle_id": "veh_frontier_4b",
+        "name": "Britz Frontier 4-Berth",
+        "category": "campervan",
+        "fuel": "gasoline",
+        "berths": 4,
+        "luggage": "4 bags",
+        "length_mm": 2550,
+        "height_mm": 650,
+        "fuel_l_per_100km": 12.8,
+        "fuel_unit": "L",
+        "code": "F4B",
+        "notes": "Four belted seats; larger ferry footprint.",
+        "website": "https://britz.example/frontier"
+      },
+      {
+        "vehicle_id": "veh_budget_2b",
+        "name": "Budget Nomad 2-Berth",
+        "category": "campervan",
+        "fuel": "gasoline",
+        "berths": 2,
+        "luggage": "2 bags",
+        "length_mm": 2480,
+        "height_mm": 610,
+        "fuel_l_per_100km": 11.1,
+        "fuel_unit": "L",
+        "code": "B2B",
+        "notes": "Excludes closed roads, gravel shortcuts and single-vehicle incidents.",
+        "website": "https://rental.example/budget"
+      }
+    ],
+    "insurance_plans": [
+      {
+        "plan_id": "ins_basic",
+        "name": "Basic Cover",
+        "daily_price": 0,
+        "currency": "NZD",
+        "terms_json": "{\"excess_nzd\":5000,\"covers\":[\"sealed public roads\"],\"excludes\":[\"closed roads\",\"gravel shortcuts\",\"single-vehicle incidents\",\"glass\",\"tyres\",\"over-capacity passengers\"]}",
+        "notes": "High excess and material exclusions."
+      },
+      {
+        "plan_id": "ins_zero_excess",
+        "name": "Zero Excess Cover",
+        "daily_price": 49,
+        "currency": "NZD",
+        "terms_json": "{\"excess_nzd\":0,\"covers\":[\"sealed public roads\",\"single-vehicle incidents\",\"glass\",\"tyres\"],\"excludes\":[\"closed roads\",\"gravel shortcuts\",\"over-capacity passengers\"]}",
+        "notes": "Still void if official closures or passenger limits are ignored."
+      }
+    ],
+    "offers": [
+      {
+        "offer_id": "offer_venturer_2b",
+        "vehicle_id": "veh_venturer_2b",
+        "pickup_location_id": "loc_chc_airport",
+        "return_location_id": "loc_akl_airport",
+        "pickup_at": "2026-10-11T09:00:00+13:00",
+        "return_at": "2026-10-24T10:00:00+13:00",
+        "daily_price": 165,
+        "currency": "NZD",
+        "bond_nzd": 1500,
+        "one_way_fee_nzd": 200,
+        "extras_nzd": 250,
+        "fuel_json": "{\"fuel\":\"return full\",\"estimated_unit_price\":2.8}",
+        "return_checklist_json": "{\"clean_interior\":true,\"empty_waste\":true,\"fuel\":\"full\",\"photos_required\":true}",
+        "seats": 2,
+        "cancel_policy": "free_cancel_until_2026-10-06",
+        "website": "https://britz.example/offers/venturer",
+        "notes": "Best two-person option."
+      },
+      {
+        "offer_id": "offer_frontier_4b",
+        "vehicle_id": "veh_frontier_4b",
+        "pickup_location_id": "loc_chc_airport",
+        "return_location_id": "loc_akl_airport",
+        "pickup_at": "2026-10-11T09:00:00+13:00",
+        "return_at": "2026-10-24T10:00:00+13:00",
+        "daily_price": 210,
+        "currency": "NZD",
+        "bond_nzd": 1500,
+        "one_way_fee_nzd": 200,
+        "extras_nzd": 250,
+        "fuel_json": "{\"fuel\":\"return full\",\"estimated_unit_price\":2.8}",
+        "return_checklist_json": "{\"clean_interior\":true,\"empty_waste\":true,\"fuel\":\"full\",\"photos_required\":true}",
+        "seats": 1,
+        "cancel_policy": "free_cancel_until_2026-10-06",
+        "website": "https://britz.example/offers/frontier",
+        "notes": "Unneeded extra capacity."
+      },
+      {
+        "offer_id": "offer_budget_restricted",
+        "vehicle_id": "veh_budget_2b",
+        "pickup_location_id": "loc_chc_airport",
+        "return_location_id": "loc_akl_airport",
+        "pickup_at": "2026-10-11T09:00:00+13:00",
+        "return_at": "2026-10-24T10:00:00+13:00",
+        "daily_price": 139,
+        "currency": "NZD",
+        "bond_nzd": 1500,
+        "one_way_fee_nzd": 200,
+        "extras_nzd": 200,
+        "fuel_json": "{\"fuel\":\"return full\",\"estimated_unit_price\":2.8}",
+        "return_checklist_json": "{\"clean_interior\":true,\"empty_waste\":true,\"fuel\":\"full\",\"photos_required\":true}",
+        "seats": 1,
+        "cancel_policy": "nonrefundable_after_hold",
+        "website": "https://rental.example/offers/budget",
+        "notes": "Cheaper but unsuitable exclusions."
+      }
+    ],
+    "bookings": [],
+    "incidents": []
+  },
+  "visa": {
+    "applications": []
+  },
+  "orders": []
+}
