@@ -21,9 +21,11 @@ then open <http://localhost:8099/>. (A static server is required because the pag
 
 ## GitHub Pages
 
-`.nojekyll` is present so all files are served verbatim. Push this folder to the
-default branch of a `VibeLifeBench.github.io` repository (or enable Pages on any
-repo) and the site is served from the repository root.
+`.nojekyll` is present so all files are served verbatim. Deployment is handled by
+`.github/workflows/pages.yml` (GitHub Actions). Enable **Settings → Pages →
+Source: GitHub Actions** on the repo; after a push to `main`, the site is at:
+
+https://vibebench.github.io/VibeLifeBench_homepage/
 
 ## Layout
 
