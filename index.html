@@ -4,137 +4,197 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>VibeLifeBench — Can Your Life Agent Be Proactive and Persistent in a Living World?</title>
-<link rel="icon" href="assets/logo.png">
+<meta name="description" content="VibeLifeBench evaluates life-domain agents on proactive, long-horizon assistance in a dynamic living world.">
+<link rel="icon" type="image/png" href="assets/logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&family=Noto+Sans+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Source+Code+Pro:wght@400;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/site.css">
 </head>
 <body>
 
-<nav class="vlb-sitenav">
-  <a class="vlb-brand" href="index.html"><img src="assets/logo.png" alt="VibeLifeBench"><span>VibeLifeBench</span></a>
-  <div class="vlb-links">
-    <a href="index.html" class="active">Overview</a>
-    <a href="leaderboard.html">Leaderboard</a>
-    <a href="trajectories/index.html">Trajectories</a>
-    <a href="https://vibebench.github.io/VibeLifeBench_livedemo/">Live Demo</a>
+<nav class="nav" id="nav">
+  <div class="container nav-inner">
+    <a class="logo" href="index.html">
+      <img src="assets/logo.png" alt="" width="32" height="32">
+      VibeLifeBench
+    </a>
+    <ul class="nav-links">
+      <li><a href="#about" class="active">About</a></li>
+      <li><a href="leaderboard.html">Leaderboard</a></li>
+      <li><a href="trajectories/index.html">Trajectories</a></li>
+      <li><a href="https://vibebench.github.io/VibeLifeBench_livedemo/">Live Demo</a></li>
+    </ul>
+    <div class="nav-actions">
+      <a class="btn btn-ghost" href="https://github.com/evolvent-ai/VibeLifeBench" target="_blank" rel="noopener">GitHub</a>
+      <a class="btn btn-primary" href="https://huggingface.co/datasets/EvolventAI/Vibelifebench" target="_blank" rel="noopener">Dataset</a>
+    </div>
   </div>
 </nav>
 
-<div class="wrap">
-
-  <header class="hero">
-    <img class="logo" src="assets/logo.png" alt="VibeLifeBench logo">
-    <h1>VibeLifeBench</h1>
-    <p class="subtitle">Can Your Life Agent Be Proactive and Persistent in a Living World?</p>
-    <p class="authors">Xiaohongshu Dots Studio &nbsp;·&nbsp; Evolvent AI</p>
-    <p class="affil">A benchmark for proactive, persistent life-domain agents in a dynamic, living world.</p>
-    <div class="btnrow">
-      <a class="btn" href="#" aria-label="Paper">📄 Paper</a>
-      <a class="btn alt" href="https://github.com/evolvent-ai/VibeLifeBench" aria-label="Code">💻 Code &amp; Data</a>
-      <a class="btn alt" href="https://huggingface.co/datasets/EvolventAI/Vibelifebench" aria-label="Dataset">🤗 Dataset</a>
-      <a class="btn alt" href="leaderboard.html">🏆 Leaderboard</a>
-      <a class="btn alt" href="https://vibebench.github.io/VibeLifeBench_livedemo/">▶ Live Demo</a>
-    </div>
-  </header>
-
-  <section>
-    <div class="stats">
-      <div class="stat"><b>200</b><span>multi-week tasks</span></div>
-      <div class="stat"><b>10</b><span>life domains</span></div>
-      <div class="stat"><b>22</b><span>service backends</span></div>
-      <div class="stat"><b>288</b><span>tool interfaces</span></div>
-      <div class="stat"><b>7,453</b><span>scripted events</span></div>
-      <div class="stat"><b>12,261</b><span>weighted checks</span></div>
-    </div>
-  </section>
-
-  <section>
-    <h2 class="sec">Abstract</h2>
-    <div class="card-panel">
-      <p class="lead">Large language model agents are increasingly deployed as personal assistants,
-      yet almost all existing evaluations remain confined to short, self-contained requests in static
-      environments and fail to reflect real-world life assistance. Life assistance differs in kind: it
-      requires the agent to be <b>proactive</b> (deciding on its own, without being prompted, when to
-      act, when to contact the user, and when to stay silent, and eliciting the implicit constraints a
-      request only hints at); to operate in a <b>dynamic, living world</b> whose state evolves on its
-      own, where weather, prices, inventory, and itineraries may change silently and only an attentive
-      agent notices and propagates the change; and to be <b>long-horizon</b>, since each task spans a
-      multi-week lifecycle throughout which an evolving plan must stay self-consistent while the
-      constraints given at the outset are always upheld. VibeLifeBench is a benchmark of 200 multi-week
-      tasks across ten everyday-life domains, built on 22 mock service backends that expose 288 tool
-      interfaces and driven by scripted timelines in which many world changes occur silently, with no
-      signal to the agent. Evaluating contemporary strong models shows that they remain far from this
-      goal, exposing a large gap between today's passive, single-turn tool use and long-horizon
-      assistance in a living world.</p>
-    </div>
-  </section>
-
-  <section>
-    <h2 class="sec">Three properties current benchmarks overlook</h2>
-    <div class="cards">
-      <div class="card">
-        <div class="ic">🧭</div>
-        <h3>Proactive</h3>
-        <p>The world changes while no one is prompting the agent. It must re-inspect the world on its
-        own each turn and decide whether to act, to notify the user, or to stay silent, and surface
-        implicit constraints from a request that only hints at them.</p>
+<main class="page" id="top">
+  <section class="hero">
+    <div class="container hero-inner">
+      <div class="hero-brand">
+        <img class="hero-logo" src="assets/logo.png" alt="VibeLifeBench logo" width="220" height="220">
+        <h1 class="hero-title">
+          <span class="title-vibe">Vibe</span><span class="title-life">Life</span><span class="title-bench">Bench</span>
+        </h1>
+        <p class="hero-tagline">
+          <span class="tagline-accent" aria-hidden="true"></span>
+          Proactive · Living World · Long-horizon
+          <span class="tagline-accent tagline-accent-right" aria-hidden="true"></span>
+        </p>
+        <p class="hero-authors">Xiaohongshu Dots Studio &nbsp;·&nbsp; Evolvent AI</p>
+        <p class="hero-affil">A benchmark for proactive, persistent life-domain agents in a dynamic world.</p>
       </div>
-      <div class="card">
-        <div class="ic">🌍</div>
-        <h3>Living world</h3>
-        <p>A stateful world advances on its own clock. A large fraction of changes are <b>silent</b>:
-        the world changes with no notification, so only an agent that re-checks discovers the
-        discrepancy in time and carries it into its plan.</p>
+
+      <div class="hero-stats">
+        <div class="h-stat"><div class="h-stat-n">200</div><div class="h-stat-l">Tasks</div></div>
+        <div class="h-stat"><div class="h-stat-n">10</div><div class="h-stat-l">Domains</div></div>
+        <div class="h-stat"><div class="h-stat-n">22</div><div class="h-stat-l">Backends</div></div>
+        <div class="h-stat"><div class="h-stat-n">288</div><div class="h-stat-l">Tools</div></div>
+        <div class="h-stat"><div class="h-stat-n">0.325</div><div class="h-stat-l">Best avg@3</div></div>
       </div>
-      <div class="card">
-        <div class="ic">🗓️</div>
-        <h3>Long-horizon</h3>
-        <p>Each task is a scripted multi-week timeline (median 29 days) of preparation, execution, and
-        wrap-up. The agent must keep an evolving plan self-consistent and hold the initial hard
-        constraints throughout.</p>
+
+      <p class="hero-sub">
+        <strong class="hero-sub-em">By far the
+          <span class="hero-sub-kw hero-sub-kw-proactive">proactive</span>
+          <span class="hero-sub-kw hero-sub-kw-living">living-world</span>
+          <span class="hero-sub-kw hero-sub-kw-horizon">long-horizon</span>
+          life-agent benchmark</strong>
+        — 200 multi-week tasks across ten everyday domains, driven by silent world changes and
+        weighted checks that expose the gap between today's tool use and durable life assistance.
+      </p>
+
+      <div class="hero-cta">
+        <a class="btn btn-primary" href="leaderboard.html">View Leaderboard</a>
+        <a class="btn btn-outline" href="trajectories/index.html">Explore Trajectories</a>
+        <a class="btn btn-ghost" href="https://vibebench.github.io/VibeLifeBench_livedemo/">Live Demo</a>
       </div>
     </div>
   </section>
 
-  <section>
-    <h2 class="sec">Overview</h2>
-    <div class="figbox">
-      <img src="assets/overview.png" alt="VibeLifeBench overview: a complete living-world task timeline">
-      <div class="cap">A complete living-world task shown end to end: a timeline driven by four event
-      kinds (user message, world observation, notification, and silent change), where implicit
-      constraints must be proactively identified and durable state maintained to the end. Below: the
-      composition of the four event kinds, the ten life domains, and the service backends.</div>
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-head">
+        <h2 class="section-title">What is <span>VibeLifeBench</span>?</h2>
+        <p class="section-sub">
+          Life assistance differs in kind from short, self-contained tool use. Agents must decide
+          when to act or stay silent, notice silent changes in a living world, and keep plans
+          self-consistent across multi-week timelines.
+        </p>
+      </div>
+      <div class="hl-grid">
+        <article class="card hl-card">
+          <h3>Proactive</h3>
+          <p>The world changes while no one is prompting the agent. It must re-inspect each turn and
+          decide whether to act, notify the user, or stay silent — and surface implicit constraints
+          a request only hints at.</p>
+          <span class="tag">Decide to act</span>
+        </article>
+        <article class="card hl-card">
+          <h3>Living world</h3>
+          <p>A stateful world advances on its own clock. Many changes are silent: no notification,
+          so only an agent that re-checks discovers the discrepancy in time and carries it into
+          its plan.</p>
+          <span class="tag">Silent change</span>
+        </article>
+        <article class="card hl-card">
+          <h3>Long-horizon</h3>
+          <p>Each task is a scripted multi-week timeline of preparation, execution, and wrap-up.
+          The agent must keep an evolving plan self-consistent and hold initial hard constraints
+          throughout.</p>
+          <span class="tag">Multi-week</span>
+        </article>
+      </div>
     </div>
   </section>
 
-  <section>
-    <h2 class="sec">Headline result</h2>
-    <div class="card-panel">
-      <p class="lead">Even the strongest of seven contemporary frontier models reaches an
-      <b>avg@3 of only 0.325</b>, with a best-of-3 ceiling of 0.412. Models fail to persistently
-      maintain cross-stage, auditable state, miss silent changes in the living world, decay in
-      coherence over the horizon, and none is competent across all ten life domains. See the full
-      <a href="leaderboard.html">leaderboard</a>, browse real
-      <a href="trajectories/index.html">agent trajectories</a>, or try the
-      <a href="https://vibebench.github.io/VibeLifeBench_livedemo/">live demo</a>.</p>
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-head">
+        <h2 class="section-title">Abstract</h2>
+        <p class="section-sub">
+          Large language model agents are increasingly deployed as personal assistants, yet almost
+          all existing evaluations remain confined to short, self-contained requests in static
+          environments and fail to reflect real-world life assistance.
+        </p>
+      </div>
+      <div class="card">
+        <p class="lead">VibeLifeBench is a benchmark of 200 multi-week tasks across ten everyday-life
+        domains, built on 22 mock service backends that expose 288 tool interfaces and driven by
+        scripted timelines in which many world changes occur silently, with no signal to the agent.
+        Evaluating contemporary strong models shows that they remain far from this goal, exposing a
+        large gap between today's passive, single-turn tool use and long-horizon assistance in a
+        living world.</p>
+      </div>
     </div>
   </section>
 
-  <section>
-    <h2 class="sec">Citation</h2>
-    <pre class="bib">@misc{vibelifebench2026,
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <h2 class="section-title">Overview</h2>
+        <p class="section-sub">
+          A complete living-world task end to end: timeline events, implicit constraints, and
+          durable state through to the finish.
+        </p>
+      </div>
+      <div class="figbox">
+        <img src="assets/overview.png" alt="VibeLifeBench overview: a complete living-world task timeline">
+        <div class="cap">A complete living-world task shown end to end: a timeline driven by four event
+        kinds (user message, world observation, notification, and silent change), where implicit
+        constraints must be proactively identified and durable state maintained to the end. Below: the
+        composition of the four event kinds, the ten life domains, and the service backends.</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-head">
+        <h2 class="section-title">Headline <span>result</span></h2>
+        <p class="section-sub">
+          Even the strongest of seven contemporary frontier models reaches an
+          <b>avg@3 of only 0.325</b>, with a best-of-3 ceiling of 0.412.
+        </p>
+      </div>
+      <div class="card">
+        <p class="lead">Models fail to persistently maintain cross-stage, auditable state, miss silent
+        changes in the living world, decay in coherence over the horizon, and none is competent across
+        all ten life domains. See the full
+        <a href="leaderboard.html">leaderboard</a>, browse real
+        <a href="trajectories/index.html">agent trajectories</a>, or try the
+        <a href="https://vibebench.github.io/VibeLifeBench_livedemo/">live demo</a>.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <h2 class="section-title">Citation</h2>
+      </div>
+      <pre class="bib">@misc{vibelifebench2026,
   title  = {VibeLifeBench: Can Your Life Agent Be Proactive and Persistent in a Living World?},
   author = {Xiaohongshu Dots Studio and Evolvent AI},
   year   = {2026},
 }</pre>
+    </div>
   </section>
+</main>
 
-  <footer>
-    VibeLifeBench &nbsp;·&nbsp; a benchmark for proactive, persistent life agents in a living world.
-  </footer>
+<footer class="footer">
+  <div class="container">
+    <p>
+      VibeLifeBench · Xiaohongshu Dots Studio &amp; Evolvent AI ·
+      <a href="https://github.com/evolvent-ai/VibeLifeBench">Code</a> ·
+      <a href="https://huggingface.co/datasets/EvolventAI/Vibelifebench">Data</a>
+    </p>
+  </div>
+</footer>
 
-</div>
+<script src="assets/site.js"></script>
 </body>
 </html>

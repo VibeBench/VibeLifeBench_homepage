@@ -8,15 +8,15 @@
 </head>
 <body>
 <style id="vlb-nav-css">
-.vlb-sitenav{display:flex;align-items:center;gap:18px;padding:9px 18px;background:#161d29;border-bottom:1px solid #2b3547;font-family:'DM Sans',system-ui,-apple-system,'Segoe UI',Roboto,'Noto Sans SC',sans-serif}
-.vlb-sitenav .vlb-brand{display:flex;align-items:center;gap:9px;color:#fff;text-decoration:none;font-weight:700;letter-spacing:.2px}
-.vlb-sitenav .vlb-brand img{height:26px;width:auto;display:block}
-.vlb-sitenav .vlb-links{display:flex;gap:4px;margin-left:auto;flex-wrap:wrap}
-.vlb-sitenav .vlb-links a{color:#c7d2e0;text-decoration:none;font-size:14px;padding:6px 13px;border-radius:8px;transition:background .15s,color .15s}
-.vlb-sitenav .vlb-links a:hover{background:#26314250;color:#fff}
-.vlb-sitenav .vlb-links a.active{background:#6c8cff;color:#fff}
+.vlb-sitenav{position:sticky;top:0;z-index:1000;display:flex;align-items:center;gap:18px;padding:0 18px;height:60px;background:rgba(250,250,250,.96);backdrop-filter:blur(12px);border-bottom:1px solid #e4e4e7;font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif}
+.vlb-sitenav .vlb-brand{display:flex;align-items:center;gap:8px;color:#18181b;text-decoration:none;font-weight:700;letter-spacing:-.02em;font-size:1.02rem}
+.vlb-sitenav .vlb-brand img{width:32px;height:32px;object-fit:contain;display:block}
+.vlb-sitenav .vlb-links{display:flex;gap:4px;margin-left:auto;flex-wrap:wrap;list-style:none}
+.vlb-sitenav .vlb-links a{color:#71717a;text-decoration:none;font-size:.875rem;font-weight:500;padding:.35rem .7rem;border-radius:6px}
+.vlb-sitenav .vlb-links a:hover{background:rgba(37,99,235,.08);color:#2563eb}
+.vlb-sitenav .vlb-links a.active{background:rgba(37,99,235,.08);color:#2563eb}
 </style>
-<nav class="vlb-sitenav"><a class="vlb-brand" href="../index.html"><img src="../assets/logo.png" alt="VibeLifeBench"><span>VibeLifeBench</span></a><div class="vlb-links"><a href="../index.html">Overview</a><a href="../leaderboard.html">Leaderboard</a><a href="../trajectories/index.html" class="active">Trajectories</a><a href="https://vibebench.github.io/VibeLifeBench_livedemo/">Live Demo</a></div></nav>
+<nav class="vlb-sitenav"><a class="vlb-brand" href="../index.html"><img src="../assets/logo.png" alt="VibeLifeBench"><span>VibeLifeBench</span></a><div class="vlb-links"><a href="../index.html">Home</a><a href="../leaderboard.html">Leaderboard</a><a href="../trajectories/index.html" class="active">Trajectories</a><a href="https://vibebench.github.io/VibeLifeBench_livedemo/">Live Demo</a></div></nav>
 
 <header class="topbar">
   <div class="brand">
