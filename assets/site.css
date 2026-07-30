@@ -398,6 +398,13 @@ a:hover {
   line-height: 1;
 }
 
+.h-stat-n-tasks { color: #2563eb; }
+.h-stat-n-domains { color: #7c3aed; }
+.h-stat-n-backends { color: #0891b2; }
+.h-stat-n-tools { color: #16a34a; }
+.h-stat-n-events { color: #d97706; }
+.h-stat-n-checks { color: #dc2626; }
+
 .h-stat-l {
   font-size: 0.58rem;
   color: var(--muted);
