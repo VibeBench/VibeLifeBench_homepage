@@ -563,6 +563,15 @@ a:hover {
   gap: 1rem;
 }
 
+/* Nested figures already sit in a card — drop the inner frame */
+.card .fig-grid .figbox {
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  padding: 0;
+  box-shadow: none;
+}
+
 /* ---- Tables (aligned with VibeSearchBench leaderboard) ---- */
 .table-wrap {
   overflow-x: auto;
