@@ -18,7 +18,7 @@
     <a href="index.html">Overview</a>
     <a href="leaderboard.html" class="active">Leaderboard</a>
     <a href="trajectories/index.html">Trajectories</a>
-    <a href="livedemo/index.html">Live Demo</a>
+    <a href="https://vibebench.github.io/VibeLifeBench_livedemo/">Live Demo</a>
   </div>
 </nav>
 
@@ -26,11 +26,11 @@
 
   <section style="padding-top:34px">
     <h2 class="sec">Leaderboard</h2>
-    <p class="lead">Five contemporary frontier models on the full evaluation set of 200 tasks. Each
+    <p class="lead">Seven contemporary frontier models on the full evaluation set of 200 tasks. Each
     task is run three times; we report <b>avg@3 / max@3 / min@3</b> and the within-task standard
     deviation <b>&sigma;</b> (the standard deviation over a task's runs, averaged across tasks),
-    together with per-run token and interaction cost. Higher is better; the whole field sits in a
-    narrow low band, which is the central finding.</p>
+    together with per-run token and interaction cost where available. Higher is better; the whole
+    field sits in a narrow low band, which is the central finding.</p>
 
     <div class="tablewrap" style="margin-top:14px">
       <table class="lb" id="main">
@@ -43,32 +43,44 @@
         </thead>
         <tbody>
           <tr class="top">
-            <td class="rank">1</td><td class="model">gemini-3.5-flash</td>
-            <td class="barcell"><div class="bar"><span style="width:64%"></span><em>0.352</em></div></td>
-            <td>0.504</td><td>0.223</td><td>0.151</td>
-            <td>41.0</td><td>196,189</td><td>223</td><td>218</td>
+            <td class="rank">1</td><td class="model">Opus-5</td>
+            <td class="barcell"><div class="bar"><span style="width:65%"></span><em>0.325</em></div></td>
+            <td>0.412</td><td>0.238</td><td>0.098</td>
+            <td>—</td><td>—</td><td>—</td><td>—</td>
           </tr>
           <tr>
             <td class="rank">2</td><td class="model">gpt-5.5</td>
-            <td class="barcell"><div class="bar"><span style="width:55%"></span><em>0.301</em></div></td>
+            <td class="barcell"><div class="bar"><span style="width:60%"></span><em>0.301</em></div></td>
             <td>0.388</td><td>0.215</td><td>0.100</td>
             <td>17.5</td><td>78,631</td><td>333</td><td>146</td>
           </tr>
           <tr>
-            <td class="rank">3</td><td class="model">opus-4.8</td>
-            <td class="barcell"><div class="bar"><span style="width:50%"></span><em>0.275</em></div></td>
+            <td class="rank">3</td><td class="model">gemini-3.5-flash</td>
+            <td class="barcell"><div class="bar"><span style="width:55%"></span><em>0.275</em></div></td>
+            <td>0.356</td><td>0.201</td><td>0.083</td>
+            <td>41.0</td><td>196,189</td><td>223</td><td>218</td>
+          </tr>
+          <tr>
+            <td class="rank">4</td><td class="model">opus-4.8</td>
+            <td class="barcell"><div class="bar"><span style="width:55%"></span><em>0.275</em></div></td>
             <td>0.343</td><td>0.203</td><td>0.075</td>
             <td>27.0</td><td>220,795</td><td>228</td><td>111</td>
           </tr>
           <tr>
-            <td class="rank">4</td><td class="model">kimi-k2.6</td>
-            <td class="barcell"><div class="bar"><span style="width:41%"></span><em>0.226</em></div></td>
+            <td class="rank">5</td><td class="model">GLM 5.2</td>
+            <td class="barcell"><div class="bar"><span style="width:51%"></span><em>0.254</em></div></td>
+            <td>0.299</td><td>0.209</td><td>0.048</td>
+            <td>—</td><td>—</td><td>—</td><td>—</td>
+          </tr>
+          <tr>
+            <td class="rank">6</td><td class="model">kimi-k2.6</td>
+            <td class="barcell"><div class="bar"><span style="width:45%"></span><em>0.226</em></div></td>
             <td>0.271</td><td>0.184</td><td>0.046</td>
             <td>21.7</td><td>120,516</td><td>231</td><td>166</td>
           </tr>
           <tr>
-            <td class="rank">5</td><td class="model">deepseek-v4-pro</td>
-            <td class="barcell"><div class="bar"><span style="width:38%"></span><em>0.211</em></div></td>
+            <td class="rank">7</td><td class="model">deepseek-v4-pro</td>
+            <td class="barcell"><div class="bar"><span style="width:42%"></span><em>0.211</em></div></td>
             <td>0.247</td><td>0.177</td><td>0.037</td>
             <td>13.7</td><td>91,088</td><td>203</td><td>101</td>
           </tr>
@@ -76,7 +88,7 @@
       </table>
     </div>
     <p class="note">A task's run score is the fraction of weighted checks it passes (0 to 1). Input tokens
-    count the full context read per turn; output tokens count all generation. All five models were run
+    count the full context read per turn; output tokens count all generation. Models were run
     under the same tool-calling harness at their strongest reasoning setting.</p>
   </section>
 
@@ -87,19 +99,23 @@
     <div class="tablewrap" style="margin-top:14px">
       <table class="hm" id="domains">
         <thead>
-          <tr><th>Domain</th><th>opus-4.8</th><th>deepseek</th><th>kimi</th><th>gpt-5.5</th><th>gemini</th></tr>
+          <tr>
+            <th>Domain</th>
+            <th>Opus-5</th><th>gpt-5.5</th><th>gemini</th><th>opus-4.8</th>
+            <th>GLM 5.2</th><th>kimi</th><th>deepseek</th>
+          </tr>
         </thead>
         <tbody>
-          <tr><td>career</td>          <td data-v>0.243</td><td data-v>0.193</td><td data-v>0.220</td><td data-v>0.219</td><td data-v>0.227</td></tr>
-          <tr><td>exam preparation</td><td data-v>0.198</td><td data-v>0.163</td><td data-v>0.160</td><td data-v>0.202</td><td data-v>0.281</td></tr>
-          <tr><td>finance</td>         <td data-v>0.208</td><td data-v>0.204</td><td data-v>0.211</td><td data-v>0.232</td><td data-v>0.422</td></tr>
-          <tr><td>fitness</td>         <td data-v>0.243</td><td data-v>0.136</td><td data-v>0.173</td><td data-v>0.276</td><td data-v>0.359</td></tr>
-          <tr><td>litigation</td>      <td data-v>0.321</td><td data-v>0.230</td><td data-v>0.211</td><td data-v>0.320</td><td data-v>0.485</td></tr>
-          <tr><td>renovation</td>      <td data-v>0.359</td><td data-v>0.271</td><td data-v>0.334</td><td data-v>0.415</td><td data-v>0.313</td></tr>
-          <tr><td>rental</td>          <td data-v>0.168</td><td data-v>0.105</td><td data-v>0.098</td><td data-v>0.135</td><td data-v>0.292</td></tr>
-          <tr><td>shopping</td>        <td data-v>0.411</td><td data-v>0.332</td><td data-v>0.410</td><td data-v>0.602</td><td data-v>0.396</td></tr>
-          <tr><td>team building</td>   <td data-v>0.233</td><td data-v>0.137</td><td data-v>0.105</td><td data-v>0.214</td><td data-v>0.306</td></tr>
-          <tr><td>travel</td>          <td data-v>0.377</td><td data-v>0.337</td><td data-v>0.336</td><td data-v>0.391</td><td data-v>0.444</td></tr>
+          <tr><td>career</td>          <td data-v>0.270</td><td data-v>0.219</td><td data-v>0.219</td><td data-v>0.243</td><td data-v>0.231</td><td data-v>0.220</td><td data-v>0.193</td></tr>
+          <tr><td>exam preparation</td><td data-v>0.235</td><td data-v>0.202</td><td data-v>0.256</td><td data-v>0.198</td><td data-v>0.187</td><td data-v>0.160</td><td data-v>0.163</td></tr>
+          <tr><td>finance</td>         <td data-v>0.254</td><td data-v>0.232</td><td data-v>0.277</td><td data-v>0.208</td><td data-v>0.240</td><td data-v>0.211</td><td data-v>0.204</td></tr>
+          <tr><td>fitness</td>         <td data-v>0.314</td><td data-v>0.276</td><td data-v>0.263</td><td data-v>0.243</td><td data-v>0.182</td><td data-v>0.173</td><td data-v>0.136</td></tr>
+          <tr><td>litigation</td>      <td data-v>0.332</td><td data-v>0.320</td><td data-v>0.283</td><td data-v>0.321</td><td data-v>0.258</td><td data-v>0.211</td><td data-v>0.230</td></tr>
+          <tr><td>renovation</td>      <td data-v>0.457</td><td data-v>0.415</td><td data-v>0.308</td><td data-v>0.359</td><td data-v>0.347</td><td data-v>0.334</td><td data-v>0.271</td></tr>
+          <tr><td>rental</td>          <td data-v>0.254</td><td data-v>0.135</td><td data-v>0.223</td><td data-v>0.168</td><td data-v>0.136</td><td data-v>0.098</td><td data-v>0.105</td></tr>
+          <tr><td>shopping</td>        <td data-v>0.511</td><td data-v>0.602</td><td data-v>0.332</td><td data-v>0.411</td><td data-v>0.386</td><td data-v>0.410</td><td data-v>0.332</td></tr>
+          <tr><td>team building</td>   <td data-v>0.218</td><td data-v>0.214</td><td data-v>0.202</td><td data-v>0.233</td><td data-v>0.177</td><td data-v>0.105</td><td data-v>0.137</td></tr>
+          <tr><td>travel</td>          <td data-v>0.410</td><td data-v>0.391</td><td data-v>0.391</td><td data-v>0.377</td><td data-v>0.394</td><td data-v>0.336</td><td data-v>0.337</td></tr>
         </tbody>
       </table>
     </div>

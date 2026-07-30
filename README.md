@@ -7,7 +7,8 @@ Four pages, linked from the top navigation bar:
 1. **Overview** (`index.html`) — logo, abstract, the three properties, key statistics, and the headline result.
 2. **Leaderboard** (`leaderboard.html`) — main results (avg@3 / max@3 / min@3 / within-task σ) and per-run cost for five frontier models, plus the per-domain breakdown and the long-horizon / cost figures.
 3. **Trajectories** (`trajectories/`) — an interactive browser over five representative task trajectories (requirement script, environment APIs, seed data, scoring criteria, and timeline replay). Reused from the `vibe-agent` demo, trimmed to five tasks.
-4. **Live demo** (`livedemo/`) — the interactive VibeLifeBench living-world demo, reused as-is.
+4. **Live demo** — links out to the hosted demo at
+   https://vibebench.github.io/VibeLifeBench_livedemo/
 
 ## Serving locally
 
@@ -34,5 +35,5 @@ index.html            overview
 leaderboard.html      leaderboard + per-domain + figures
 assets/               logo, rendered figures, shared stylesheet
 trajectories/         trimmed trajectory browser (5 tasks) + data/
-livedemo/             the live living-world demo (reused verbatim)
+(live demo is hosted separately; nav links point to VibeLifeBench_livedemo)
 ```
