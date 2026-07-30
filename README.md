@@ -5,10 +5,11 @@ Static project page for **VibeLifeBench: Can Your Life Agent Be Proactive and Pe
 Four pages, linked from the top navigation bar:
 
 1. **Overview** (`index.html`) — logo, abstract, the three properties, key statistics, and the headline result.
-2. **Leaderboard** (`leaderboard.html`) — main results (avg@3 / max@3 / min@3 / within-task σ) and per-run cost for five frontier models, plus the per-domain breakdown and the long-horizon / cost figures.
-3. **Trajectories** (`trajectories/`) — an interactive browser over five representative task trajectories (requirement script, environment APIs, seed data, scoring criteria, and timeline replay). Reused from the `vibe-agent` demo, trimmed to five tasks.
-4. **Live demo** — links out to the hosted demo at
+2. **Leaderboard** (`leaderboard.html`) — main results (avg@3 / max@3 / min@3 / within-task σ) and per-run cost for frontier models, plus the per-domain breakdown and the long-horizon / cost figures.
+3. **Live demo** — links out to the hosted demo at
    https://vibebench.github.io/VibeLifeBench_livedemo/
+
+(Trajectories browser is in-repo under `trajectories/` but not linked from the nav for now.)
 
 ## Serving locally
 
