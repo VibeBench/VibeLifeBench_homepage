@@ -563,9 +563,10 @@ a:hover {
   gap: 1rem;
 }
 
-/* ---- Tables ---- */
+/* ---- Tables (aligned with VibeSearchBench leaderboard) ---- */
 .table-wrap {
   overflow-x: auto;
+  margin: 0 -0.15rem;
 }
 
 table.lb,
@@ -577,30 +578,30 @@ table.hm {
 }
 
 table.lb th,
-table.lb td,
-table.hm th,
-table.hm td {
-  padding: 0.7rem 0.75rem;
+table.hm th {
+  text-align: left;
+  padding: 0.55rem 0.85rem;
+  color: var(--muted);
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
   border-bottom: 1px solid var(--border);
-  text-align: right;
+  background: transparent;
   white-space: nowrap;
 }
 
-table.lb th,
-table.hm th {
-  text-align: right;
-  font-weight: 600;
-  color: var(--muted);
-  background: var(--surface2);
-  position: sticky;
-  top: 0;
+table.lb td,
+table.hm td {
+  padding: 0.65rem 0.85rem;
+  border-bottom: 1px solid var(--border);
+  white-space: nowrap;
+  vertical-align: middle;
 }
 
-table.lb td:first-child,
-table.lb th:first-child,
-table.hm td:first-child,
-table.hm th:first-child {
-  text-align: left;
+table.lb tbody tr:hover td,
+table.hm tbody tr:hover td {
+  background: #f8faff;
 }
 
 table.lb tr:last-child td,
@@ -608,25 +609,67 @@ table.hm tr:last-child td {
   border-bottom: none;
 }
 
-table.lb .rank {
-  color: var(--muted);
-  width: 34px;
-  text-align: center;
+table.lb .num,
+table.hm .num {
+  font-variant-numeric: tabular-nums;
+  text-align: right;
 }
 
-table.lb .model {
+table.lb th.num,
+table.hm th.num {
+  text-align: right;
+}
+
+.rank-badge {
+  display: inline-flex;
+  width: 1.5rem;
+  height: 1.5rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  font-size: 0.72rem;
   font-weight: 700;
+  background: var(--surface2);
+  color: var(--muted);
 }
 
-table.lb tr.top .model {
+.rank-1 {
+  background: #fef3c7;
+  color: #b45309;
+}
+
+.rank-2 {
+  background: #f1f5f9;
+  color: #475569;
+}
+
+.rank-3 {
+  background: #ffedd5;
+  color: #c2410c;
+}
+
+.model-name {
+  font-weight: 600;
+  color: var(--text);
+}
+
+.model-name.best {
+  color: var(--accent);
+}
+
+.metric-primary {
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  color: var(--text);
+}
+
+.metric-primary.best {
   color: var(--accent);
 }
 
 table.hm th,
 table.hm td {
   text-align: center;
-  border: 1px solid var(--border);
-  padding: 0.55rem 0.5rem;
 }
 
 table.hm td:first-child,
@@ -635,38 +678,9 @@ table.hm th:first-child {
   font-weight: 600;
 }
 
-.barcell {
-  position: relative;
-  min-width: 140px;
-}
-
-.bar {
-  position: relative;
-  height: 22px;
-  background: var(--surface2);
-  border-radius: 6px;
-  overflow: hidden;
-  min-width: 110px;
-}
-
-.bar > span {
-  position: absolute;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  background: linear-gradient(90deg, #60a5fa, #2563eb);
-  border-radius: 6px;
-}
-
-.bar > em {
-  position: absolute;
-  right: 7px;
-  top: 0;
-  line-height: 22px;
-  font-style: normal;
-  font-size: 12px;
-  color: var(--text);
-  font-weight: 700;
+table.hm td[data-v] {
+  font-variant-numeric: tabular-nums;
+  font-size: 0.8rem;
 }
 
 .note {

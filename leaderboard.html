@@ -48,53 +48,67 @@
           <table class="lb" id="main">
             <thead>
               <tr>
-                <th class="rank">#</th><th>Model</th>
-                <th>avg@3</th><th>max@3</th><th>min@3</th><th>&sigma;</th>
-                <th>Input&nbsp;(M)</th><th>Output</th><th>Tool&nbsp;calls</th><th>Turns</th>
+                <th>#</th>
+                <th>Model</th>
+                <th class="num">avg@3</th>
+                <th class="num">max@3</th>
+                <th class="num">min@3</th>
+                <th class="num">&sigma;</th>
+                <th class="num">Input (M)</th>
+                <th class="num">Output</th>
+                <th class="num">Tool calls</th>
+                <th class="num">Turns</th>
               </tr>
             </thead>
             <tbody>
-              <tr class="top">
-                <td class="rank">1</td><td class="model">Opus-5</td>
-                <td class="barcell"><div class="bar"><span style="width:65%"></span><em>0.325</em></div></td>
-                <td>0.412</td><td>0.238</td><td>0.098</td>
-                <td>25.6</td><td>325,198</td><td>316</td><td>210</td>
+              <tr>
+                <td><span class="rank-badge rank-1">1</span></td>
+                <td class="model-name best">Opus-5</td>
+                <td class="num"><span class="metric-primary best">0.325</span></td>
+                <td class="num">0.412</td><td class="num">0.238</td><td class="num">0.098</td>
+                <td class="num">25.6</td><td class="num">325,198</td><td class="num">316</td><td class="num">210</td>
               </tr>
               <tr>
-                <td class="rank">2</td><td class="model">gpt-5.5</td>
-                <td class="barcell"><div class="bar"><span style="width:60%"></span><em>0.301</em></div></td>
-                <td>0.388</td><td>0.215</td><td>0.100</td>
-                <td>17.5</td><td>78,631</td><td>333</td><td>146</td>
+                <td><span class="rank-badge rank-2">2</span></td>
+                <td class="model-name">gpt-5.5</td>
+                <td class="num"><span class="metric-primary">0.301</span></td>
+                <td class="num">0.388</td><td class="num">0.215</td><td class="num">0.100</td>
+                <td class="num">17.5</td><td class="num">78,631</td><td class="num">333</td><td class="num">146</td>
               </tr>
               <tr>
-                <td class="rank">3</td><td class="model">gemini-3.5-flash</td>
-                <td class="barcell"><div class="bar"><span style="width:55%"></span><em>0.275</em></div></td>
-                <td>0.356</td><td>0.201</td><td>0.083</td>
-                <td>41.2</td><td>213,757</td><td>243</td><td>227</td>
+                <td><span class="rank-badge rank-3">3</span></td>
+                <td class="model-name">gemini-3.5-flash</td>
+                <td class="num"><span class="metric-primary">0.275</span></td>
+                <td class="num">0.356</td><td class="num">0.201</td><td class="num">0.083</td>
+                <td class="num">41.2</td><td class="num">213,757</td><td class="num">243</td><td class="num">227</td>
               </tr>
               <tr>
-                <td class="rank">4</td><td class="model">opus-4.8</td>
-                <td class="barcell"><div class="bar"><span style="width:55%"></span><em>0.275</em></div></td>
-                <td>0.343</td><td>0.203</td><td>0.075</td>
-                <td>27.0</td><td>220,795</td><td>228</td><td>111</td>
+                <td><span class="rank-badge">4</span></td>
+                <td class="model-name">opus-4.8</td>
+                <td class="num"><span class="metric-primary">0.275</span></td>
+                <td class="num">0.343</td><td class="num">0.203</td><td class="num">0.075</td>
+                <td class="num">27.0</td><td class="num">220,795</td><td class="num">228</td><td class="num">111</td>
               </tr>
               <tr>
-                <td class="rank">5</td><td class="model">GLM 5.2</td>
-                <td class="barcell"><div class="bar"><span style="width:51%"></span><em>0.254</em></div></td>
-                <td>0.299</td><td>0.209</td><td>0.048</td>
-                <td>22.3</td><td>133,285</td><td>288</td><td>141</td>
+                <td><span class="rank-badge">5</span></td>
+                <td class="model-name">GLM 5.2</td>
+                <td class="num"><span class="metric-primary">0.254</span></td>
+                <td class="num">0.299</td><td class="num">0.209</td><td class="num">0.048</td>
+                <td class="num">22.3</td><td class="num">133,285</td><td class="num">288</td><td class="num">141</td>
               </tr>
               <tr>
-                <td class="rank">6</td><td class="model">kimi-k2.6</td>
-                <td class="barcell"><div class="bar"><span style="width:45%"></span><em>0.226</em></div></td>
-                <td>0.271</td><td>0.184</td><td>0.046</td>
-                <td>21.7</td><td>120,516</td><td>231</td><td>166</td>
+                <td><span class="rank-badge">6</span></td>
+                <td class="model-name">kimi-k2.6</td>
+                <td class="num"><span class="metric-primary">0.226</span></td>
+                <td class="num">0.271</td><td class="num">0.184</td><td class="num">0.046</td>
+                <td class="num">21.7</td><td class="num">120,516</td><td class="num">231</td><td class="num">166</td>
               </tr>
               <tr>
-                <td class="rank">7</td><td class="model">deepseek-v4-pro</td>
-                <td class="barcell"><div class="bar"><span style="width:42%"></span><em>0.211</em></div></td>
-                <td>0.247</td><td>0.177</td><td>0.037</td>
-                <td>13.7</td><td>91,088</td><td>203</td><td>101</td>
+                <td><span class="rank-badge">7</span></td>
+                <td class="model-name">deepseek-v4-pro</td>
+                <td class="num"><span class="metric-primary">0.211</span></td>
+                <td class="num">0.247</td><td class="num">0.177</td><td class="num">0.037</td>
+                <td class="num">13.7</td><td class="num">91,088</td><td class="num">203</td><td class="num">101</td>
               </tr>
             </tbody>
           </table>
@@ -115,8 +129,8 @@
             <thead>
               <tr>
                 <th>Domain</th>
-                <th>Opus-5</th><th>gpt-5.5</th><th>gemini</th><th>opus-4.8</th>
-                <th>GLM 5.2</th><th>kimi</th><th>deepseek</th>
+                <th class="num">Opus-5</th><th class="num">gpt-5.5</th><th class="num">gemini</th><th class="num">opus-4.8</th>
+                <th class="num">GLM 5.2</th><th class="num">kimi</th><th class="num">deepseek</th>
               </tr>
             </thead>
             <tbody>
@@ -172,10 +186,14 @@
   var lo=Math.min.apply(null,vals), hi=Math.max.apply(null,vals);
   cells.forEach(function(c){
     var v=parseFloat(c.textContent), t=(v-lo)/(hi-lo||1);
-    var h=8+t*122;
-    c.style.background='hsl('+h+',55%,88%)';
+    // soft blue→green wash, closer to VibeSearchBench calm palette
+    var h=210 - t*90;
+    var s=35 + t*25;
+    var l=96 - t*10;
+    c.style.background='hsl('+h+','+s+'%,'+l+'%)';
     c.style.color='#18181b';
     c.style.fontWeight = t>0.72 ? '700':'500';
+    c.style.borderRadius = '4px';
   });
 })();
 </script>
